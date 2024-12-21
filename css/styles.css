@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    background-color: rgb(54, 54, 54);
+}
+body{
+    background-color: linen;
+    border: 1px solid black;
+    display: table;
+    width: 80%;
+    margin: auto;
+    min-height: 500px;
+    padding: 20px;
+}
+article{
+    padding: 10px;             
+}
+section{
+    padding: 10px;
+}
+section.main{
+    float: left;
+    width: 60%;
+    min-height: 400px;
+    border-right: 1px dotted black;
+}
+section.detail, section.login, section.logout{
+    float: right;
+    width: 37%;
+    /*border-bottom: 1px dotted black;*/
+}
+
+
+div{
+    padding: 5px;
+}
+
+h1{
+    line-height: 1.5em;
+    font-size: 2em;
+    font-family: Helvetica, Arial, sans-serif;
+}
+h2{
+    font-family: Helvetica, Arial, sans-serif;
+}
+table{
+    
+    border-collapse: collapse;
+    padding: 5px;
+    width: 100%;
+}
+td, th{
+    border-collapse: collapse;
+    border-bottom: 1px solid rgb(126, 126, 126);
+    padding: 5px;
+    text-align: left;
+}
+
+/*
+td:last-child{
+    width: 40%;
+}*/
+
+tr:first-child{
+    border-top: 1px solid rgb(126, 126, 126);
+}
+
+td:nth-last-child(1),td:nth-last-child(2){
+    text-align:right;
+}
+
+thead{
+    border-bottom: 1px solid rgb(126, 126, 126);
+    border-top: 1px solid rgb(126, 126, 126);
+    background-color: orange;
+    font-size: bigger;
+    line-height: 1.2em;
+    
+}
+.evenRow{
+    background-color: ghostwhite;
+}
+/*
+input{
+    margin-bottom: 3px;
+}*/
+input, select{                    
+    margin-bottom: 2px;
+    
+}
+input[type="submit"]{                
+    padding: 5px;
+    min-width: 50%;
+    background-color: orange;
+}
+
+.notification{
+    padding: 5px;
+    background-color: orange;
+    color: rgb(54, 54, 54);
+    width: 99%;
+}
+
+form{
+    flex: 1 2 100px;
+}
+
+form > div{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 5px;
+}
+
+form>div *{
+    flex: 1 1 100px;
+}
+
+span img{
+    min-width: 60px;
+    max-width: 100px;
+    width:40%;
+}
+
+form div div {
+    padding: 5px;
+}
+
+p.error{
+    color: red;
+    font-weight: bold;
+}
